@@ -4,7 +4,8 @@ import pandas as pd
 
 @st.cache_data
 def carregar_dados():
-    df = pd.read_csv("vendas.csv", parse_dates=["data"])
+    df = pd.read_csv(
+        "atividades-datanalyse-python\08-streamlit\vendas.csv", parse_dates=["data"])
     return df
 
 
